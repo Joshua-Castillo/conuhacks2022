@@ -6,6 +6,7 @@ class User:
         self.role = "villager"
         self.teamId = 0
         self.roundReady = 0
+        self.repliedMsg = ""
 
     def setPhone(self, value):
         self.phone = value
@@ -25,6 +26,9 @@ class User:
     def setRoundReady(self, value):
         self.roundReady = value
 
+    def setRepliedMsg(self, value):
+        self.repliedMsg = value
+
     def getPhone(self):
         return self.phone
 
@@ -42,3 +46,6 @@ class User:
 
     def getRoundReady(self):
         return self.roundReady
+
+    def getRepliedMsg(self):
+        return self.repliedMsg
